@@ -3,8 +3,8 @@ package ass3.mygame2;
 /**
  * 
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Gursharandeep Kaur
+ * @version 07/06/2021
  */
 public class Item
 {
@@ -13,19 +13,15 @@ public class Item
     private int destructivePower;
     private double healingPower;
     
-    public Item(String name, String description, int destructivePower)
+    public Item(String name, String description, int destructivePower, double healingPower)
     {
         this.name = name;
         this.description = description;
         this.destructivePower = destructivePower;
-    }
-    
-    public Item(String name, String description, double healingPower)
-    {
-        this.name = name;
-        this.description = description;
         this.healingPower = healingPower;
     }
+    
+   
     
     //write accessors and mutators
     public String getName(){
