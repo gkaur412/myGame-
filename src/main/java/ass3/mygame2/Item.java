@@ -11,15 +11,17 @@ public class Item
     private String description;
     private String name;
     private int destructivePower;
-    private double healingPower;
     
-    public Item(String name, String description, int destructivePower, double healingPower)
+    
+    public Item(String name, String description, int destructivePower)
     {
         this.name = name;
         this.description = description;
         this.destructivePower = destructivePower;
-        this.healingPower = healingPower;
+        
     }
+
+   
     
    
     
