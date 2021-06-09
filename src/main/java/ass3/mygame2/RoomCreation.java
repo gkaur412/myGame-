@@ -14,6 +14,11 @@ public class RoomCreation {
         createRooms();
     }
     
+    //* create all rooms and link their exits.
+    // castle, it is in east direction
+    // kitchen,it is in south direction
+    //FrontGate, it is in north direction
+    //Guradroom, it is in southeast direction
     
     private void createRooms() {
 
@@ -24,6 +29,7 @@ public class RoomCreation {
         frontGate = new Room("frontGate", "There is a giant ogre", true);
         guardRoom = new Room("guardRoom", "Take the Gun", true);
 
+        //initialise room exits
         castle.setExit("east", kitchen);
         castle.setExit("south", frontGate);
         frontGate.setExit("north", castle);

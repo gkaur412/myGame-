@@ -5,11 +5,13 @@ import java.util.ArrayList;
 
 /**
  * Write a description of class ItemCreation here.
- *
+ *There are four items such as ExcaliburSword, key,
+ * frontGateKey, and gun.
+ * these items can be used by the player to run the game.
  * @author Gursharandeep Kaur
  * @version 07/06/2021
  */
-public class ItemCreation
+public final class ItemCreation
 {
     
     private ArrayList<Item> allItemsInGame;

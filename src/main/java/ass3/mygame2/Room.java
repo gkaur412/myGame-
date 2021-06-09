@@ -5,8 +5,9 @@ import java.util.HashMap;
 import java.util.ArrayList;
 
 /**
- * Write at least 3 sentences!!!!!
- * 
+ * A "Room" represents one location in the scenery of the game.  It is 
+ * connected to other rooms via exits.  The exits are labelled north, 
+ * east, south, southEast. 
  * @author  Michael Kölling and David J. Barnes
  * @version 2016.02.29
  */
@@ -37,8 +38,10 @@ public class Room
 
     /**
      * Define an exit from this room.
-     * @param direction The direction of the exit.
-     * @param neighbor  The room to which the exit leads.
+     * @param the north exit.
+     * @param the south exit.
+     * @param the east exit.
+     * @param the southEast exit.
      */
     public void setExit(String direction, Room neighbor) 
     {
@@ -57,7 +60,7 @@ public class Room
     /**
      * Return a description of the room in the form:
      *     You are in the kitchen.
-     *     Exits: north west
+     *     Exits: south
      * @return A long description of this room
      */
     public String getLongDescription()
@@ -138,7 +141,7 @@ public class Room
 
     /**
      * Method getLockedStatus
-     *
+     * Method setLockedStatus
      * @return The return value
      */
 

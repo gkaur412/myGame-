@@ -4,7 +4,8 @@ package ass3.mygame2;
 
 /**
  *
- * @author @version
+ * @Gursharandeep Kaur
+ * @version 07/06/2021
  */
 
 
@@ -12,7 +13,7 @@ public class MyGame {
 
     /**
     *
-    * @param nothing
+    * @param calling the play function
     */
     public static void main(String[] args) {
         Game game = new Game();
